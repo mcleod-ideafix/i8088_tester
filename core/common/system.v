@@ -145,6 +145,7 @@ module minimal_system (
     ram[1034] = 8'h01; // XOR AL,1
     ram[1035] = 8'hEB;
     ram[1036] = 8'hF5; // JMP again
+    // This small program will make the led to blink at approx. 4 times/second.
 
     ram[16383] = 8'hCF;  // IRET for all interrupt vectors
   end
